@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Done Win - Color Trading</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background-color: #1e1e2f;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .countdown {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff0057;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e6004c;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .box {
+      background-color: #2e2e4d;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Done Win</h1>
+    <p>The Most Trusted Color Trading Platform</p>
+  </header>
+
+  <section>
+    <div class="countdown">Next Game Starts In: <span id="timer">00:30</span></div>
+    <a href="https://t.me/+SdIn3RooB1g1NWVl" target="_blank" class="btn">Join Telegram to Play</a>
+  </section>
+
+  <section class="box">
+    <h2>How to Play</h2>
+    <p>Select a color (Red, Green, or Violet). If your prediction is correct when the timer ends, you win!</p>
+  </section>
+
+  <section class="box">
+    <h2>Deposit & Withdraw</h2>
+    <p>All payments and withdrawals are handled via Telegram support. Join the group and contact admin.</p>
+  </section>
+
+  <section class="box">
+    <h2>FAQs</h2>
+    <p><strong>Q:</strong> Is it safe?<br /><strong>A:</strong> Yes! 24/7 support and instant payout guarantee.</p>
+    <p><strong>Q:</strong> What is the minimum deposit?<br /><strong>A:</strong> ₹100</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Done Win. All rights reserved.
+  </footer>
+
+  <script>
+    // Countdown timer logic
+    let timerElement = document.getElementById("timer");
+    let time = 30;
+    setInterval(() => {
+      time--;
+      if (time <= 0) time = 30;
+      timerElement.textContent = `00:${time < 10 ? '0' + time : time}`;
+    }, 1000);
+  </script>
+</body>
+</html>
